@@ -1,0 +1,2 @@
+#!/bin/bash
+perl -F'\t' -lane 'print $F[0]' | sort | uniq -c | sort -nr | head -n 11 | perl -lane 'print $F[1]'
